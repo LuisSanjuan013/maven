@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Ov-P5-tnh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Maven-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTQ-GR-fd3">
+                                <rect key="frame" x="150" y="388" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AKp-ET-0Ie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Device A"/>
+                                <connections>
+                                    <action selector="openDeviceA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6lU-P3-Otm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQw-AA-j3X">
+                                <rect key="frame" x="150" y="468" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pL0-gR-utJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Device B"/>
+                                <connections>
+                                    <action selector="openDeviceB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XpS-yB-mO5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HQw-AA-j3X" secondAttribute="trailing" constant="150" id="7ro-w0-9WX"/>
+                            <constraint firstItem="cTQ-GR-fd3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="J8p-Ej-RIK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cTQ-GR-fd3" secondAttribute="trailing" constant="150" id="LKp-sp-V9F"/>
+                            <constraint firstItem="HQw-AA-j3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="WJc-qP-ZZD"/>
+                            <constraint firstItem="HQw-AA-j3X" firstAttribute="top" secondItem="cTQ-GR-fd3" secondAttribute="bottom" constant="50" id="iPX-Nc-zZE"/>
+                            <constraint firstItem="cTQ-GR-fd3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="tZx-xC-obl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maven" id="NmV-d0-1fV"/>
+                    <connections>
+                        <outlet property="deviceAButton" destination="cTQ-GR-fd3" id="hIl-eS-sfc"/>
+                        <outlet property="deviceBButton" destination="HQw-AA-j3X" id="grq-Yq-pmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-796" y="715"/>
+        </scene>
+        <!--Program 2-->
+        <scene sceneID="WiV-eE-yLS">
+            <objects>
+                <viewController storyboardIdentifier="DAProgram2ViewController" id="uPH-33-MfI" customClass="DAProgram2ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ObI-Mf-uDD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z2I-Rn-3vl"/>
+                        <color key="backgroundColor" red="0.79895758387460647" green="0.92592235858699656" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 2" image="scribble" catalog="system" id="Ike-H5-56b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOM-XK-wR3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2610.144927536232" y="-752.00892857142856"/>
+        </scene>
+        <!--Program 3-->
+        <scene sceneID="NZT-4z-dzJ">
+            <objects>
+                <viewController storyboardIdentifier="DAProgram3ViewController" id="Kem-24-N6g" customClass="DAProgram3ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bh3-xl-E0v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dvp-RW-xhN"/>
+                        <color key="backgroundColor" red="0.71611450259491971" green="0.80333969470814326" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 3" image="highlighter" catalog="system" id="Xng-Ql-P0Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdN-bs-XUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3384.057971014493" y="-370.3125"/>
+        </scene>
+        <!--Program 3-->
+        <scene sceneID="pfN-nf-fEU">
+            <objects>
+                <viewController storyboardIdentifier="DBProgram3ViewController" id="8D9-io-q0O" customClass="DBProgram3ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mft-u4-lI0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BsF-CO-NJ2"/>
+                        <color key="backgroundColor" red="0.72179797134999402" green="1" blue="0.68381359008804699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 3" image="newspaper" catalog="system" id="NxX-ZT-AQW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7j-I9-n83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="1452"/>
+        </scene>
+        <!--Program 5-->
+        <scene sceneID="DCU-Xr-ucg">
+            <objects>
+                <viewController storyboardIdentifier="DBProgram5ViewController" id="c3d-ac-aPZ" customClass="DBProgram5ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c19-cj-JPX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5oT-ok-Sma"/>
+                        <color key="backgroundColor" red="1" green="0.83857420302967822" blue="0.47758370820012508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 5" image="book.closed" catalog="system" id="xJr-YP-qfC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJ2-ph-lRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="1933"/>
+        </scene>
+        <!--Program 1-->
+        <scene sceneID="0mk-dd-Gnk">
+            <objects>
+                <viewController storyboardIdentifier="DBProgram1ViewController" id="Im6-4P-Csz" customClass="DBProgram1ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUK-3B-7OR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Dp-J9-jp0"/>
+                        <color key="backgroundColor" red="1" green="0.99363540192214173" blue="0.81576932336063535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 1" image="book" catalog="system" id="whJ-Bx-E0U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMX-Yv-Qs6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="1042"/>
+        </scene>
+        <!--DeviceB Tab Bar Controller-->
+        <scene sceneID="8Bl-qi-3C0">
+            <objects>
+                <tabBarController storyboardIdentifier="DeviceBTabBarController" id="Rpf-Qr-m1I" customClass="DeviceBTabBarController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L9J-Zc-lc2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Im6-4P-Csz" kind="relationship" relationship="viewControllers" id="B6d-2u-S6W"/>
+                        <segue destination="8D9-io-q0O" kind="relationship" relationship="viewControllers" id="EvU-Z5-0Fn"/>
+                        <segue destination="c3d-ac-aPZ" kind="relationship" relationship="viewControllers" id="Fgj-ye-oib"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jc0-Qs-rgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="1452"/>
+        </scene>
+        <!--Program 1-->
+        <scene sceneID="FxI-8Z-M8l">
+            <objects>
+                <viewController storyboardIdentifier="DAProgram1ViewController" id="Zqx-wJ-F0F" customClass="DAProgram1ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pv6-nf-TFz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ytP-lY-dNS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 1" image="pencil" catalog="system" id="DSF-m9-rrB"/>
+                    <navigationItem key="navigationItem" id="mgi-9e-KQp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w40-fo-NDx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786.9565217391305" y="-992.41071428571422"/>
+        </scene>
+        <!--Volume Control View Controller-->
+        <scene sceneID="RYr-tK-bXu">
+            <objects>
+                <viewController storyboardIdentifier="VolumeControlViewController" id="NCT-c0-fDW" customClass="VolumeControlViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9OB-QK-25I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="erg-BU-Yh6">
+                                <rect key="frame" x="76" y="433" width="262" height="31"/>
+                                <connections>
+                                    <action selector="volumeControl:" destination="NCT-c0-fDW" eventType="valueChanged" id="mgs-Jw-8Pf"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volume" translatesAutoresizingMaskIntoConstraints="NO" id="Vex-fe-pzf">
+                                <rect key="frame" x="42" y="438" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="YSJ-vv-Kfb"/>
+                                    <constraint firstAttribute="height" constant="20" id="gV6-dp-HEj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker" translatesAutoresizingMaskIntoConstraints="NO" id="jRC-PS-Ioe">
+                                <rect key="frame" x="348" y="435.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="45Y-AV-CJU"/>
+                                    <constraint firstAttribute="height" constant="25" id="Bay-jH-ABE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmF-Cl-8y4">
+                                <rect key="frame" x="165.5" y="250" width="83" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="7rj-Ea-I0C"/>
+                                    <constraint firstAttribute="height" constant="65" id="k0l-VK-xyG"/>
+                                </constraints>
+                                <state key="normal" image="mute"/>
+                                <connections>
+                                    <action selector="muteVolume:" destination="NCT-c0-fDW" eventType="touchUpInside" id="tZf-eh-C98"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9oN-jK-HgS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="erg-BU-Yh6" firstAttribute="centerX" secondItem="9OB-QK-25I" secondAttribute="centerX" id="F2h-MW-Ro1"/>
+                            <constraint firstItem="erg-BU-Yh6" firstAttribute="centerY" secondItem="9OB-QK-25I" secondAttribute="centerY" id="Fnw-ve-bPk"/>
+                            <constraint firstItem="erg-BU-Yh6" firstAttribute="leading" secondItem="Vex-fe-pzf" secondAttribute="trailing" constant="16" id="HrY-1Q-f7U"/>
+                            <constraint firstItem="VmF-Cl-8y4" firstAttribute="centerX" secondItem="9OB-QK-25I" secondAttribute="centerX" id="O1N-LV-aoo"/>
+                            <constraint firstItem="erg-BU-Yh6" firstAttribute="leading" secondItem="9oN-jK-HgS" secondAttribute="leading" constant="78" id="Xwu-6J-hkx"/>
+                            <constraint firstItem="VmF-Cl-8y4" firstAttribute="top" secondItem="9oN-jK-HgS" secondAttribute="top" constant="206" id="Zy8-46-h2P"/>
+                            <constraint firstItem="jRC-PS-Ioe" firstAttribute="centerY" secondItem="erg-BU-Yh6" secondAttribute="centerY" id="nxq-ZT-194"/>
+                            <constraint firstItem="jRC-PS-Ioe" firstAttribute="leading" secondItem="erg-BU-Yh6" secondAttribute="trailing" constant="12" id="t1H-aB-wa1"/>
+                            <constraint firstItem="Vex-fe-pzf" firstAttribute="centerY" secondItem="erg-BU-Yh6" secondAttribute="centerY" id="wJC-Kh-Ega"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="muteButton" destination="VmF-Cl-8y4" id="yr3-6o-8bX"/>
+                        <outlet property="volumeSlider" destination="erg-BU-Yh6" id="fQC-8I-138"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LtX-ac-khm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="-19"/>
+        </scene>
+        <!--DeviceA Tab Bar Controller-->
+        <scene sceneID="RGd-0G-aES">
+            <objects>
+                <tabBarController storyboardIdentifier="DeviceATabBarController" id="2af-AW-JWG" customClass="DeviceATabBarController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="08X-rI-Oc6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Zqx-wJ-F0F" kind="relationship" relationship="viewControllers" id="AV9-R6-X0r"/>
+                        <segue destination="uPH-33-MfI" kind="relationship" relationship="viewControllers" id="DLq-nc-elS"/>
+                        <segue destination="Kem-24-N6g" kind="relationship" relationship="viewControllers" id="pCO-rp-dTj"/>
+                        <segue destination="htV-d3-soF" kind="relationship" relationship="viewControllers" id="O7H-qP-s1b"/>
+                        <segue destination="W0i-hp-GzZ" kind="relationship" relationship="viewControllers" id="lTo-lb-wDz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0v-xC-cBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-370"/>
+        </scene>
+        <!--Program 4-->
+        <scene sceneID="Btp-WY-Kze">
+            <objects>
+                <viewController storyboardIdentifier="DAProgram4ViewController" id="htV-d3-soF" customClass="DAProgram4ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VW8-Ge-KbS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3yC-MZ-XC7"/>
+                        <color key="backgroundColor" red="0.29249745355387524" green="0.79263198499090126" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 4" image="pencil.tip" catalog="system" id="fab-iM-YfQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgx-Kj-3VT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="66"/>
+        </scene>
+        <!--Program 5-->
+        <scene sceneID="iAF-W4-wGh">
+            <objects>
+                <viewController storyboardIdentifier="DAProgram5ViewController" id="W0i-hp-GzZ" customClass="DAProgram5ViewController" customModule="MavenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3nn-Id-dae">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7HA-Up-BaK"/>
+                        <color key="backgroundColor" red="0.14039526297538465" green="0.47057067125220292" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Program 5" image="doc.text" catalog="system" id="qbD-Uv-VtN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQa-Rx-vRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zBh-wj-9HF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Ov-P5-tnh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3cJ-f5-vEc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jEj-T2-zZi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKB-A1-GOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1681" y="715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="book.closed" catalog="system" width="115" height="128"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="highlighter" catalog="system" width="128" height="119"/>
+        <image name="mute" width="29" height="29"/>
+        <image name="newspaper" catalog="system" width="128" height="108"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="pencil.tip" catalog="system" width="99" height="128"/>
+        <image name="scribble" catalog="system" width="128" height="118"/>
+        <image name="speaker" width="29" height="29"/>
+        <image name="volume" width="29" height="29"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
